@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'REST Easy' target in the 'REST Easy' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
