@@ -8,8 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : NSObject <NSApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate, NSURLConnectionDataDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSTextField *url;
+@property (weak) IBOutlet NSComboBox *method;
+@property (weak) IBOutlet NSButton *followRedirect;
+@property (unsafe_unretained) IBOutlet NSTextView *result;
+
+- (IBAction)send:(id)sender;
 
 @end
