@@ -2,7 +2,7 @@
 <archive type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="8.00">
 	<data>
 		<int key="IBDocument.SystemTarget">1080</int>
-		<string key="IBDocument.SystemVersion">12A269</string>
+		<string key="IBDocument.SystemVersion">12B19</string>
 		<string key="IBDocument.InterfaceBuilderVersion">2549</string>
 		<string key="IBDocument.AppKitVersion">1187</string>
 		<string key="IBDocument.HIToolboxVersion">624.00</string>
@@ -1581,7 +1581,7 @@
 										<object class="NSTextView" id="970875617">
 											<reference key="NSNextResponder" ref="148694638"/>
 											<int key="NSvFlags">2322</int>
-											<string key="NSFrameSize">{829, 652}</string>
+											<string key="NSFrameSize">{799, 652}</string>
 											<reference key="NSSuperview" ref="148694638"/>
 											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="871415351"/>
@@ -1601,7 +1601,7 @@
 													<nil key="NSDelegate"/>
 												</object>
 												<reference key="NSTextView" ref="970875617"/>
-												<double key="NSWidth">829</double>
+												<double key="NSWidth">799</double>
 												<int key="NSTCFlags">1</int>
 											</object>
 											<object class="NSTextViewSharedData" key="NSSharedData">
@@ -1641,10 +1641,11 @@
 											</object>
 											<int key="NSTVFlags">6</int>
 											<string key="NSMaxSize">{835, 10000000}</string>
+											<string key="NSMinize">{814, 652}</string>
 											<nil key="NSDelegate"/>
 										</object>
 									</array>
-									<string key="NSFrame">{{1, 1}, {829, 652}}</string>
+									<string key="NSFrame">{{1, 1}, {814, 652}}</string>
 									<reference key="NSSuperview" ref="1041616855"/>
 									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="970875617"/>
@@ -1809,7 +1810,7 @@ wGw</bytes>
 								<object class="NSScroller" id="871415351">
 									<reference key="NSNextResponder" ref="1041616855"/>
 									<int key="NSvFlags">256</int>
-									<string key="NSFrame">{{814, 1}, {16, 652}}</string>
+									<string key="NSFrame">{{815, 1}, {15, 652}}</string>
 									<reference key="NSSuperview" ref="1041616855"/>
 									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView"/>

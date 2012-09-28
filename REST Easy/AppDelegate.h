@@ -8,6 +8,8 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class SMLSyntaxColouring;
+
 @interface AppDelegate : NSObject <NSApplicationDelegate, NSURLConnectionDataDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
@@ -15,6 +17,7 @@
 @property (weak) IBOutlet NSComboBox *method;
 @property (weak) IBOutlet NSButton *followRedirect;
 @property (unsafe_unretained) IBOutlet NSTextView *result;
+@property (assign) SMLSyntaxColouring *syntaxColoring;
 
 - (IBAction)send:(id)sender;
 

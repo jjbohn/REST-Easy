@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42293FA515ED96DC00ECF182 /* SMLSyntaxColouring.m in Sources */ = {isa = PBXBuildFile; fileRef = 42293FA415ED96DC00ECF182 /* SMLSyntaxColouring.m */; };
+		42293FA915ED98F700ECF182 /* SMLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42293FA815ED98F700ECF182 /* SMLTextView.m */; };
 		4262498015E13F7B00417A4A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4262497F15E13F7B00417A4A /* Cocoa.framework */; };
 		4262498A15E13F7B00417A4A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4262498815E13F7B00417A4A /* InfoPlist.strings */; };
 		4262498C15E13F7B00417A4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4262498B15E13F7B00417A4A /* main.m */; };
@@ -30,6 +32,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4213153015E15342006C8988 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		42293FA415ED96DC00ECF182 /* SMLSyntaxColouring.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLSyntaxColouring.m; sourceTree = "<group>"; };
+		42293FA615ED98B900ECF182 /* SMLSyntaxColouring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLSyntaxColouring.h; sourceTree = "<group>"; };
+		42293FA715ED98F700ECF182 /* SMLTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMLTextView.h; sourceTree = "<group>"; };
+		42293FA815ED98F700ECF182 /* SMLTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMLTextView.m; sourceTree = "<group>"; };
 		4262497B15E13F7B00417A4A /* REST Easy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "REST Easy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4262497F15E13F7B00417A4A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		4262498215E13F7B00417A4A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -75,6 +82,7 @@
 		4262497015E13F7B00417A4A = {
 			isa = PBXGroup;
 			children = (
+				4213153015E15342006C8988 /* CFNetwork.framework */,
 				4262498515E13F7B00417A4A /* REST Easy */,
 				426249A215E13F7C00417A4A /* REST EasyTests */,
 				4262497E15E13F7B00417A4A /* Frameworks */,
@@ -114,7 +122,11 @@
 		4262498515E13F7B00417A4A /* REST Easy */ = {
 			isa = PBXGroup;
 			children = (
+				42293FA615ED98B900ECF182 /* SMLSyntaxColouring.h */,
+				42293FA415ED96DC00ECF182 /* SMLSyntaxColouring.m */,
 				4262499115E13F7B00417A4A /* AppDelegate.h */,
+				42293FA715ED98F700ECF182 /* SMLTextView.h */,
+				42293FA815ED98F700ECF182 /* SMLTextView.m */,
 				4262499215E13F7B00417A4A /* AppDelegate.m */,
 				4262499415E13F7C00417A4A /* MainMenu.xib */,
 				4262498615E13F7B00417A4A /* Supporting Files */,
@@ -263,6 +275,7 @@
 			files = (
 				4262498C15E13F7B00417A4A /* main.m in Sources */,
 				4262499315E13F7B00417A4A /* AppDelegate.m in Sources */,
+				42293FA515ED96DC00ECF182 /* SMLSyntaxColouring.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				426249AA15E13F7C00417A4A /* REST_EasyTests.m in Sources */,
+				42293FA915ED98F700ECF182 /* SMLTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,6 +386,7 @@
 		426249AE15E13F7C00417A4A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "REST Easy/REST Easy-Prefix.pch";
@@ -384,6 +399,7 @@
 		426249AF15E13F7C00417A4A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "REST Easy/REST Easy-Prefix.pch";
@@ -442,6 +458,7 @@
 				426249AF15E13F7C00417A4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		426249B015E13F7C00417A4A /* Build configuration list for PBXNativeTarget "REST EasyTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +467,7 @@
 				426249B215E13F7C00417A4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
